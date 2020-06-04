@@ -1,10 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
+body {
+  background: hsl(218, 28%, 13%);
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  background: hsl(217, 28%, 15%);
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 100px 100px;
+}
+.header__logo {
+  align-self: center;
+}
+.header__menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.header__menu__item {
+  margin-right: 100px;
+}
+.header__menu__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /* Attribution section */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #ffffff;
+}
+
+/* Media Queries */
+@media all and (max-width: 980px) {
+  /* Header Section */
+  .header {
+    padding: 50px 0 100px 50px;
+  }
+  .header__menu__item {
+    margin-right: 50px;
+  }
+}
+@media all and (max-width: 740px) {
+  /* Header Section */
+  .header {
+    padding: 50px 0 100px 20px;
+  }
+  .header__logo {
+    width: 25%;
+  }
+  .header__menu__item {
+    margin-right: 20px;
+  }
 }
