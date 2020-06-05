@@ -23,6 +23,14 @@ body {
   padding: 15px 75px;
   cursor: pointer;
 }
+.screen-reader {
+  position: absolute;
+  left: -100vw;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 /* Header */
 .header {
   background: hsl(217, 28%, 15%);
@@ -173,6 +181,37 @@ body {
 .testimonial__job {
   font-size: 10px;
 }
+/* Early Access Section */
+.access {
+  background: hsl(217, 28%, 15%);
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+  padding: 50px 75px;
+  text-align: center;
+}
+.access__title {
+  font-size: 30px;
+  margin: 0;
+}
+.access__paragraph {
+  width: 90%;
+  margin: 25px auto;
+}
+.access__email {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 25px;
+  width: 60%;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.access__button {
+  padding: 15px 25px;
+}
 /* Attribution section */
 .attribution {
   font-size: 11px;
@@ -230,6 +269,15 @@ body {
   }
   .testimonial__block {
     margin: 0 10px;
+  }
+  /* Early Access Section */
+  .access__email {
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 0;
+  }
+  .access__button {
+    width: 100%;
   }
 }
 @media all and (max-width: 740px) {
@@ -300,5 +348,17 @@ body {
   .testimonial__block {
     padding: 20px 15px 20px 15px;
     margin: 15px 0;
+  }
+  /* Early Access Section */
+  .access {
+    width: auto;
+    padding: 50px 25px;
+    margin: 0 20px;
+  }
+  .access__title {
+    font-size: 20px;
+  }
+  .access__paragraph {
+    width: 100%;
   }
 }
