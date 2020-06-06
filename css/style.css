@@ -58,7 +58,22 @@ body {
 .intro {
   background: hsl(217, 28%, 15%);
   text-align: center;
-  margin-bottom: 200px;
+  display: grid;
+}
+.intro__content {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  z-index: 2;
+  margin-bottom: 190px;
+}
+.curve {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  align-self: end;
+  background: no-repeat url(../images/bg-curvy-desktop.svg);
+  background-size: cover;
+  height: 449px;
+  width: 100%;
 }
 .intro__image-block {
   width: 50%;
@@ -292,7 +307,7 @@ body {
     margin-right: 50px;
   }
   /* Intro Section */
-  .intro {
+  .intro__content {
     padding: 0 50px;
   }
   .intro__image-block {
@@ -364,7 +379,25 @@ body {
   }
   /* Intro Section */
   .intro {
+    grid-template-rows: 1fr 141px 2fr;
+  }
+  .intro__content {
     padding: 0 30px;
+    margin-bottom: 100px;
+  }
+  .curve {
+    grid-row: 2 / 3;
+    height: 141px;
+    width: 100%;
+    align-self: center;
+    background: url(../images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-color-block {
+    background: hsl(218, 28%, 13%);
+    grid-column: 1;
+    grid-row: 3 / -1;
   }
   .intro__image-block {
     width: 100%;
