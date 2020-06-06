@@ -71,6 +71,7 @@ body {
   grid-row: 1 / -1;
   align-self: end;
   background: no-repeat url(../images/bg-curvy-desktop.svg);
+  background-position: center;
   background-size: cover;
   height: 449px;
   width: 100%;
@@ -204,6 +205,9 @@ body {
   margin: auto;
   padding: 50px 75px;
   text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -150px;
 }
 .access__title {
   font-size: 30px;
@@ -230,7 +234,7 @@ body {
 /* Footer */
 .footer {
   background: hsl(216, 53%, 9%);
-  padding: 250px 100px 125px 125px;
+  padding: 250px 100px 50px 125px;
 }
 .footer__links {
   display: flex;
@@ -298,6 +302,11 @@ body {
 }
 
 /* Media Queries */
+@media all and (min-width: 1440px) {
+  .curve {
+    background-position: initial;
+  }
+}
 @media all and (max-width: 980px) {
   /* Header Section */
   .header {
@@ -347,6 +356,9 @@ body {
     margin: 0 10px;
   }
   /* Early Access Section */
+  .access {
+    margin-bottom: -185px;
+  }
   .access__email {
     width: 100%;
     box-sizing: border-box;
@@ -414,6 +426,7 @@ body {
   .offer {
     grid-template-columns: 1fr;
     padding: 0 30px;
+    margin-bottom: 150px;
   }
   .offer__block {
     width: 100%;
@@ -426,6 +439,7 @@ body {
   .productive {
     flex-direction: column;
     padding: 0 30px;
+    margin-bottom: 150px;
   }
   .productive__image-block {
     margin-right: 0px;
@@ -448,6 +462,7 @@ body {
     flex-direction: column;
     padding: 0 30px;
     font-size: 13px;
+    margin-bottom: 150px;
   }
   .testimonial__block {
     padding: 20px 15px 20px 15px;
@@ -457,7 +472,7 @@ body {
   .access {
     width: auto;
     padding: 50px 25px;
-    margin: 0 20px;
+    margin: 0 20px -186px 20px;
   }
   .access__title {
     font-size: 20px;
