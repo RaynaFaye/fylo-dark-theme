@@ -228,6 +228,18 @@ body {
   margin-right: 30px;
   margin-bottom: 20px;
 }
+.tooltip {
+  display: none;
+  color: rgb(218, 55, 55);
+  font-size: 12px;
+  margin-left: 25px;
+}
+.tooltiptwo {
+  display: none;
+  color: rgb(50, 182, 50);
+  font-size: 12px;
+  margin-left: 25px;
+}
 .access__button {
   padding: 15px 25px;
 }
